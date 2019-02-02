@@ -3,7 +3,7 @@
 
 Because sometimes you need an algorithm that works for you, not just a bullet list.
 
-**The plan is: **
+**The plan is:**
 
 - get the app working to automate the task tracking
 
