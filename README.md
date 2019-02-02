@@ -1,16 +1,25 @@
 # i.do - The code-based todo-list
-"i.do" is a code-based todo-list that focuses on habit building and procedures.
-Because sometimes you need an algorithm, not just 
+"**i.do**" is a code-based todo-list that focuses on habit building and procedures.
 
-The syntax is saved as pseudo-code.
+Because sometimes you need an algorithm that works for you, not just a bullet list.
+
+**The plan is: **
+
+- get the app working to automate the task tracking
+
+- get a community to form around this format
+
+- share wisdom and useful algorithms
+
+- create a steady database for all to use
+
+## Example of format
 
 For instance, the below pseudo-code is readable, and anyone can perform it for keeping track of tasks, in a deeper way than simply todo-lists.
 
 The goal is to make an app that automates this process and keeps you on track of your goals.
 
-Eventually, a community will form around this format, and wisdom will be shared.
-
-"The problem today is not the lack of information, it's the lack of wisdom."
+*"The problem today is not the lack of information, it's the lack of wisdom."*
 
 ```
 //Learning hyper-parameters, 
@@ -104,9 +113,15 @@ I.learn ( subject )
 ### 7. Make the flow seamless and easy to use
 ### 8. Make a MVP, and launch tests.
 
-## Stage2 - Scale with the community
+## Stage2 - Attract the community
 ### 1. Create social media involvement
 ### 2. Standardise the format of i.do
 ### 3. Gather a collection of i.do notes
 ### 4. Decide on branding and name
 ### 5. Create & Test & Refine
+
+## Stage3 - Scale the feedback
+### 1. Add voting system
+### 2. Add local database to store the notes
+### 3. Base it all on git
+### 4. Create nodes, that people can gather and vote on
