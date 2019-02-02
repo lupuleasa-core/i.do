@@ -1,0 +1,76 @@
+//Learning hyper-parameters, 
+// choose your own, 
+// know yourself
+//
+MAX_Tries = 5;                           //Know when to give up in your approach
+MAX_lateral_thinking = 10;                                // How many concurrent subjects can be tackled at once during learning
+MAX_thinking_depth = 3;                  //How many related subjects should be pursued during learning
+world = Universe.getReality()            //This is the world we live and learn in
+[me, my, I, I_am] = Universe.myself;     //These refer to you
+
+I.learn ( subject )
+{
+    //Don't multitask
+    if( I_am.currently_learning_count() > MAX_lateral_thinking )
+    {
+        importance = I.estimate_importance( subject );
+        return my.backlog.add_for_later( subject, importance );
+    }
+
+
+    //Start fresh
+    new blank_note;
+    blank_note.write( world.find_new_research_points( subject ) );
+
+
+        //Attempt to understand
+        tries = 0;
+        while ( understand( blank_note )  != true )
+        {
+            rewrite_in_simple_terms ( blank_note );
+
+            tries++;
+            if( tries > maxTries )
+            {
+                //Research leads nowhere
+                return learn( subject );
+            }
+        }        
+         
+
+        //Look to understand related subjects
+        if ( related_subjects = world.find_related_subjects(subject) )
+    {
+        depth = subject.currentDepth();
+        if( depth <= MAX_thinking_depth )
+        {
+            learn( related_subjects )
+        }
+    }
+
+
+        //Test to see that you refined the concept
+        while ( find_child_and_teach ( blank_note ) != success )
+        {
+            //Start again
+            return learn ( subject );
+        }
+
+
+        //Index the new information
+    me.knowledge_base.organize_and_index ( blank_sheet_of_paper );
+
+
+        //Consolidate already present information
+    if ( related_known_subjects = knowledge_base.find_related_subjects( subject ) )
+    {
+        learn( related_known_subjects );
+    }
+
+
+        //Mark subject as learned
+    return me.mark( subject, "learned" )
+
+    //If your current knowledge can be applied 
+    if ( my.knowledge
+}
